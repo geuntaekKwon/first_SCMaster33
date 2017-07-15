@@ -13,6 +13,7 @@ import sesoc.global.webTest.vo.Customer;
 
 @Controller
 public class CustomerController {
+	//gitTest
 	@Autowired
 	CustomerRepository repo;
 	
