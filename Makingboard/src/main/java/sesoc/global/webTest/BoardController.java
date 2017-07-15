@@ -46,7 +46,7 @@ public class BoardController {
 	BoardRepository repo;
 	
 	/**
-	 * 글 목록 요청    // .............!!!!
+	 * 글 목록 요청    // .............!!!! 라라라라라라라라라라
 	 * */
 	@RequestMapping("/boardList")
 	// <a href="boardList?currentPage=${}">
