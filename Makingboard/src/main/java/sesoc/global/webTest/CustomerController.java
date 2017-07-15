@@ -42,7 +42,7 @@ public class CustomerController {
 		Customer customer = repo.findCustomer(custid, password);
 		
 		if(customer == null){
-			message = "로그인 실패";
+			message = "濡쒓렇�씤 �떎�뙣";
 			session.setAttribute("message", message);
 			return "customer/message";
 		}else{
@@ -72,7 +72,7 @@ public class CustomerController {
 	}//update
 	@RequestMapping(value="update", method=RequestMethod.POST)
 	public String update(HttpSession session, String address, String email, String idno){
-		String id = (String) session.getAttribute("loginId"); /// 여기에서 받아보자 매개변수로 말고, session으로
+		String id = (String) session.getAttribute("loginId"); /// �뿬湲곗뿉�꽌 諛쏆븘蹂댁옄 留ㅺ컻蹂��닔濡� 留먭퀬, session�쑝濡�
 		String password = (String) session.getAttribute("password");
 		Customer customer = repo.findCustomer(id, password);
 		customer.setAddress(address);
@@ -85,3 +85,6 @@ public class CustomerController {
 	}//update
 	
 }//class
+
+
+//git Test
