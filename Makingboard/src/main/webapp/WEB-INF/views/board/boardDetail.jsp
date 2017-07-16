@@ -58,7 +58,7 @@
 </script>
 <body>
 	<div id="wrapper">
-	<h1> [ 기만자 권근택 ]</h1>
+	<h1> [ 기만자 ]</h1>
 		<form action="boardUpdate" method="get" id="fm">
 			<input type="hidden" name="boardnum" value="${board.boardnum}"><!-- hidden : 우리 눈에 보이지는 않지만 사용자 몰래 정보 일부를 가지고 갈 때 -->
 			<table border="1">
