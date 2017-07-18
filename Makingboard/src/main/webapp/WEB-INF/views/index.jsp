@@ -50,9 +50,10 @@ function deleteCustomer() {
 		</c:if>
 		
 		<li><a href="boardList" >게시판</a></li>
+		<li><a href="noticeList" >공지사항</a></li>
 		
 	</ul>
-	<img alt="첫화면" src="resources/images.jpg">
+	<img alt="첫화면" src="images/images.jpg">
 </div>
 </body>
 </html>

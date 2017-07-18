@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class WebExceptionHandler {
 
 	
-	@ExceptionHandler(Exception.class)
+//	@ExceptionHandler(Exception.class)
 	public String errorHandler(Model model, Exception e){
 		model.addAttribute("errormsg", e.getMessage());
 		return "/error";

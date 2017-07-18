@@ -69,7 +69,7 @@
 
 <h2>[ 게시판 글 목록 ]</h2>
 <div class="home">
-	<a href="${pageContext.request.contextPath}/"><img src="resources/images.jpg" /></a>
+	<a href="${pageContext.request.contextPath}/"><img src="images/images.jpg" /></a>
 
 	<!-- 특정 글 검색 -->
 	<form id="search" action ="boardList" method="POST" >
@@ -98,7 +98,7 @@
 		<td>${stat.count}</td>
 		<td class="title">
 			<c:if test="${board.originalfile ne null}">
-				<img src="resources/images.jpg">
+				<img src="images/images.jpg">
 			</c:if>
 			<a href="boardDetail?boardnum=${board.boardnum}&currentPage=${navi.currentPage}&searchtype=${searchtype}&searchword=${searchword}">${board.title}</a>
 		</td>

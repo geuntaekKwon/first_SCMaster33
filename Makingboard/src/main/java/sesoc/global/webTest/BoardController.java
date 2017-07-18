@@ -46,7 +46,7 @@ public class BoardController {
 	BoardRepository repo;
 	
 	/**
-	 * 글 목록 요청    // .............!!!! 라라라라라라라라라라
+	 * 글 목록 요청    //
 	 * */
 	@RequestMapping("/boardList")
 	// <a href="boardList?currentPage=${}">
@@ -59,7 +59,6 @@ public class BoardController {
 	{
 		//전체 글 개수
 		int totalRecordCount = repo.getBoardCount(searchtype, searchword);
-		System.out.println("[ currentPage ] : " + currentPage);
 		PageNavigator navi = new PageNavigator(currentPage, totalRecordCount);
 		
 		List<Board> boardList = repo.findAll(searchtype, searchword, navi.getStartRecord(), navi.getCountPerPage());

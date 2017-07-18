@@ -1,4 +1,4 @@
--- SEBank (2017/6/15)
+﻿-- SEBank (2017/6/15)
 DROP TABLE customer;
 
 -- 1. Customer
@@ -49,6 +49,20 @@ CREATE TABLE reply
 
 CREATE SEQUENCE reply_seq start with 1 increment by 1;
 
+-- 4. Notice
 
+CREATE TABLE notice 
+(
+	noticenum number PRIMARY KEY,
+	custid varchar2(20) NOT NULL,
+	title varchar2(100) NOT NULL,
+	content varchar2(4000) NOT NULL,
+	inputdate date default sysdate,
+	hits number default 0,
+	originalfile varchar2(300),
+	savedfile varchar2(300)
+);
 
-
+CREATE SEQUENCE NOTICE_SEQ
+	START WITH 1
+	INCREMENT BY 1;
