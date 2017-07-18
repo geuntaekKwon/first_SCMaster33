@@ -49,7 +49,6 @@ public class NoticeController {
 		//
 		List<Notice> list = repo.select(map, rb, navi.getStartRecord(), navi.getCountPerPage());
 		
-		
 		model.addAttribute("navi", navi);
 		model.addAttribute("searchtype", searchtype);
 		model.addAttribute("searchword", searchword);

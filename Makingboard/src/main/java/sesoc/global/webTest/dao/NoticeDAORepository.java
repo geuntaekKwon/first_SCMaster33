@@ -48,7 +48,7 @@ public class NoticeDAORepository{
 
 	public int getNoticeCount(Map<String, String> map) {
 		NoticeDAO dao = sql.getMapper(NoticeDAO.class);
-		return 0;
+		return dao.getNoticeCount(map);
 	}
 
 	public int incrementCount(int noticenum) {
