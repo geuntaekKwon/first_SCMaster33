@@ -6,18 +6,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 import javax.activation.MimetypesFileTypeMap;
 import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +26,6 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import sesoc.global.webTest.dao.BoardRepository;
-import sesoc.global.webTest.service.BoardService;
 import sesoc.global.webTest.util.FileService;
 import sesoc.global.webTest.util.PageNavigator;
 import sesoc.global.webTest.vo.Board;
@@ -40,7 +34,7 @@ import sesoc.global.webTest.vo.Board;
 public class BoardController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);	
-	private final String uploadPath = "/boardfile"; // 파일이 저장되는 HDD 공간
+	private final String uploadPath = "/boardfile"; // 파일이 저장되는 HDD 공간!!!!!!!!!!!!!!!!!
 	
 	@Autowired
 	BoardRepository repo;
